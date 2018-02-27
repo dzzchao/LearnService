@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_intentservice)
     void intentService() {
-
+        startService(new Intent(this, MyIntentService.class));
     }
 
     @Override

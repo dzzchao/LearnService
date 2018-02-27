@@ -9,3 +9,8 @@ bind 启动：onCreate -> onBind -> onUnbind -> onDestroy
 - onBind() 当其他组件想通过bindService 与服务绑定时，系统将会回调这个方法，在实现中，你必须返回一个IBinder接口，供客户端与服务进行通信，必须实现此方法，这个方法是Service 的一个抽象方法，但是如果你不允许绑定的话，返回null 就可以了。
 
 ## IntentService 的使用
+- IntentService 是Service 的子类，它使用工作线程逐一处理所有启动请求，如果您不要求服务同时处理多个请求，这是最好的选择。
+只需实现 onHandIntent方法即可，该方法会接收每个启动请求的 Intent，使您能够执行后台工作。
+默认为我们开启了一个工作线程，在任务执行完毕后，自动停止服务。
+
+### To be continued

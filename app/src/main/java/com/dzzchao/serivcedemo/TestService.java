@@ -16,8 +16,8 @@ import timber.log.Timber;
  */
 public class TestService extends Service {
 
-    public class MyBinder extends Binder {
-        public TestService getService() {
+    class MyBinder extends Binder {
+        TestService getService() {
             return TestService.this;
         }
     }
