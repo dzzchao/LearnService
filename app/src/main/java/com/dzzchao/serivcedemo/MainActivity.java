@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             TestService.MyBinder myBinder = (TestService.MyBinder) binder;
             TestService service = myBinder.getService();
             int randomNumber = service.getRandomNumber();
-            Timber.d("randomNum: %s", randomNumber);
+            Timber.d("randomNum: %d", randomNumber);
         }
 
         /**
