@@ -18,6 +18,6 @@ bind 启动：onCreate -> onBind -> onUnbind -> onDestroy
 
 ### IntentService 源码解析
 
-请阅读 IntentServiceAnalysis 类。
+请阅读 [IntentServiceAnalysis](https://github.com/dzzchao/ServiceDemo/blob/master/app/src/main/java/com/dzzchao/serivcedemo/IntentServiceAnalysis.java) 类。
 
 ### To be continued ...
