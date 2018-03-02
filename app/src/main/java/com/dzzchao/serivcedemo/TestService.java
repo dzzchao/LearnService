@@ -11,8 +11,10 @@ import java.util.Random;
 import timber.log.Timber;
 
 /**
+ *
  * @author zhangchao
  * @date 2018/2/26
+ *
  */
 public class TestService extends Service {
 
@@ -31,6 +33,12 @@ public class TestService extends Service {
     public void onCreate() {
         Timber.d("onCreate Thread: %s", Thread.currentThread().getName());
         super.onCreate();
+    }
+
+    @Override
+    public void onStart(Intent intent, int startId) {
+        Timber.d("onStart");
+        super.onStart(intent, startId);
     }
 
     @Override
