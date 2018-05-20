@@ -122,7 +122,7 @@ public abstract class IntentServiceAnalysis extends Service {
 
         /*
             创建了一个 HandlerThread， 用它的 Looper 来构造一个 Handler 对象 mServiceHandler。
-            通过 mServiceHandler 发送的消息都会在 HandlerThread 中执行，
+            通过 mServiceHandler 发送的消息都会在 HandlerThread 中执行。
             IntentService 也可以执行后台任务，每次启动后，它的 onStartCommand 方法就会调用一次，
             IntentService 在 onStartCommand 中处理每个任务的 Intent。
          */

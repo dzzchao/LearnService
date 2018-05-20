@@ -1,11 +1,9 @@
 package com.dzzchao.serivcedemo;
 
-import android.annotation.SuppressLint;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Looper;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import timber.log.Timber;
 
