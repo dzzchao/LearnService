@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dzzchao.serivcedemo.MainActivity">
 
+
     <Button
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start" />
+        android:text="start"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_stop"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="stop"
-        app:layout_constraintLeft_toRightOf="@id/btn_start" />
+        app:layout_constraintStart_toEndOf="@+id/btn_start"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_bind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="bind"
-        app:layout_constraintLeft_toRightOf="@id/btn_stop" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_stop"
+        app:layout_constraintStart_toEndOf="@+id/btn_stop" />
 
     <Button
         android:id="@+id/btn_unbind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="unbind"
-        app:layout_constraintLeft_toRightOf="@id/btn_bind" />
-
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_bind"
+        app:layout_constraintStart_toEndOf="@+id/btn_bind" />
 
     <Button
         android:id="@+id/btn_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="secondActivity"
-        app:layout_constraintTop_toBottomOf="@id/btn_start" />
+        app:layout_constraintStart_toStartOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start" />
 
     <Button
         android:id="@+id/btn_intentservice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="IntentService"
-        app:layout_constraintTop_toBottomOf="@id/btn_second" />
+        app:layout_constraintStart_toStartOf="@+id/btn_second"
+        app:layout_constraintTop_toBottomOf="@+id/btn_second" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

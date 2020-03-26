@@ -3,7 +3,7 @@ package com.dzzchao.serivcedemo;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Looper;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import timber.log.Timber;
 
